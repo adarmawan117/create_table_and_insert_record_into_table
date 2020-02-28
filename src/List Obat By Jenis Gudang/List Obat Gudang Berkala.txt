@@ -1,0 +1,79 @@
+Alkohol teknis 70%
+Autosera S TG N R1
+Autosera S TG N R2
+Alkali Phospatase
+Alkohol Swab
+Anti HCV
+Blanko K 800
+Blanko Anamnesa
+Blanko Rontgen
+Cell Pack DCL
+Cell Clean Auto (CCA-500)
+Cholestest N HDL R1
+Cholestest N HDL R2
+Cholestest N LDL R1
+Cholestest N LDL R2
+Cholestest N-Calibrator (Lipid Calibrator)
+Cholestest Control 1
+Cholestest Control 2
+Cartridge CE 311A
+Cairan Developer Automatic
+Cairan Fixer Automatic
+Creatinin PAP FS
+Dongel LED
+Disposible Syringe 5 cc
+ECG Cream
+EKG Jelly
+ECG Electrode @ 50
+Flurocell WNR
+Flurocell WDF
+Film 35 x 35
+Glucose Hexokinase FS
+HbsAg
+HIV
+Kertas Printer
+Kapas Pembalut
+Kertas HVS A4
+Kertas Refraktometer
+Kertas HVS F4
+Kertas Tonometri
+Kertas Biometri
+Kertas USG
+Kertas EKG 3 chanel 60x30 mm
+Kertas Treadmil
+Lysercell WNR 210A
+Lysercell WDF 210A
+Multistik 10 SG
+Malaria
+Masker tali
+Map Biola
+Narkoba 3 Panel (MOP, THC, AMP)
+Pureauto S CHO N R1
+Pureauto S CHO N R2
+Pot Urine
+Plester bulat
+Pulpen AE9
+PP Tes
+SGOT
+SGPT
+Sarung tangan steril No. 7
+Sarung tangan steril No. 7,5
+Sarung tangan steril No. 8
+Sulfolyser 1.5
+Spidol Permanen
+Speculum Plastik
+Tang Spatel Disposible
+Tang Spatel Kayu
+TruCal U (Multi Calibrator)
+Trulab N (Kontrol Normal)
+Trulab P (Kontrol Normal)
+Tuniquet
+Urea UV
+Urid Acid FS (TBHBA)
+USG Gell
+VDRL
+Vacutainer 3 ml EDTA ungu
+Vacutainer 5 ml Plain Merah
+X-Ray Film 35 x 35 cm
+XN Check (L1, L2, L3)
+XN Cal
