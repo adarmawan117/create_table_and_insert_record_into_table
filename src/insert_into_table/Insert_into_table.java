@@ -61,10 +61,14 @@ public class Insert_into_table {
             conn = DriverManager.getConnection(jdbcUrl, username, password);
             stmt = conn.createStatement();
             
+            // membuat semua tabel, sesuai yang ada di ArrayList "nama_gudang"
             for(String nama : nama_gudang) {
+                // karena penamaan tabel tidak boleh menggunakan spasi, 
+                //maka perlu untuk merubah spasi menjadi underscore terlebih dahulu
                 nama = replace_underscore(nama);
-                final String CREATE_TABLE_SQL="CREATE TABLE "+ nama
-                                  + "(nama_obat VARCHAR(50) NOT NULL)";
+                
+                final String CREATE_TABLE_SQL = "CREATE TABLE "+ nama
+                                                + "(nama_obat VARCHAR(50) NOT NULL)";
                 stmt.executeUpdate(CREATE_TABLE_SQL);
                 System.out.println("Table created");
             }
@@ -111,6 +115,7 @@ public class Insert_into_table {
             
             // mengulang semua list file
             for(String nama_file : list_file_text) {
+                
                 int idx = list_file_text.indexOf(nama_file);
                 
                 File file = new File(nama_file); 
@@ -123,8 +128,17 @@ public class Insert_into_table {
                     while ((nama_obat = br.readLine()) != null) { 
                         //System.out.println(nama_obat);
                         
+                        // nama_gudang.get(idx) merupakan nama tabel yang akan ditambahkan
                         String query =  " insert into "+ nama_gudang.get(idx) 
                                         +" (nama_obat)"
+                                        /*
+                                Tanda tanya disini akan berpengaruh terhadap banyaknya syntax
+                                seperti pada baris ke 144.
+                                misal:
+                                values (?, ?, ?)
+                                maka, preparedStmt.setString() akan ada 3 buah,
+                                dan angkanya akan bertambah, jadi 1, lalu 2, lalu 3
+                                        */
                                         + " values (?)";
                         // create the mysql insert preparedstatement
                         PreparedStatement preparedStmt = conn.prepareStatement(query);
@@ -138,18 +152,16 @@ public class Insert_into_table {
                     Logger.getLogger(Insert_into_table.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
+            // menutup koneksi database
             conn.close();
           } catch (Exception e){
-
-            // tampilkan error (buat form untuk menampilkan error). suruh user untuk menghubungi programmer
-            // tangkap errornya kedalam sebuah file log
+            e.printStackTrace();
           } 
     }
     
     public static void main(String[] args) {
         Insert_into_table iit = new Insert_into_table();
-        //iit.create_table();
+        iit.create_table();
         iit.insert();
-    } // end of main
-    
+    } // end of main   
 }
